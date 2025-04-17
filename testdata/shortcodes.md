@@ -75,7 +75,37 @@ The unsplash shortcode:
 
 Another unsplash shortcode:
 
-{{% unsplash 
-  name="xxx" 
-  href="xxx" 
+{{% unsplash
+  name="xxx"
+  href="xxx"
 %}}
+
+Shortcodes with unusual whitespace:
+
+- {{<myshortcode>}}
+- {{< myshortcode>}}
+- {{<  myshortcode>}}
+- {{<myshortcode >}}
+- {{<myshortcode  >}}
+- {{</myshortcode>}}
+- {{< /myshortcode>}}
+- {{<  /myshortcode>}}
+- {{</myshortcode >}}
+- {{</myshortcode  >}}
+- {{%myshortcode%}}
+- {{% myshortcode%}}
+- {{%  myshortcode%}}
+- {{%myshortcode %}}
+- {{%myshortcode  %}}
+- {{%/myshortcode%}}
+- {{% /myshortcode%}}
+- {{%  /myshortcode%}}
+- {{%/myshortcode %}}
+- {{%/myshortcode  %}}
+
+Note that commented shortcodes still require a space after the opening but not necessarily before the closing marker.
+
+- {{</* commentedoutshortcode*/>}}
+- {{</* /closecommentedoutshortcode*/>}}
+- {{%/* commentedoutshortcodemd*/%}}
+- {{%/* /closecommentedoutshortcodemd*/%}}
