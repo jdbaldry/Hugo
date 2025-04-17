@@ -69,11 +69,11 @@ For example:
 - {{%/* commentedoutshortcodemd */%}}
 - {{%/* /closecommentedoutshortcodemd */%}}
 
-The unspalsh shortcode:
+The unsplash shortcode:
 
 {{% unsplash name="xxx" href="xxx" %}}
 
-Another unspalsh shortcode:
+Another unsplash shortcode:
 
 {{% unsplash 
   name="xxx" 
